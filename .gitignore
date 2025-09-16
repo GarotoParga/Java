@@ -1,12 +1,39 @@
+# Ignorar arquivos de build
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignorar logs
+*.log
+
+# Ignorar pacotes gerados
+*.zip
+*.tar.gz
+*.rar
+
+# Ignorar IDEs
 # IntelliJ IDEA
 .idea/
 *.iml
+out/
 
-# Output de compilação
-/out/
-/target/
-/build/
+# Eclipse
+.project
+.classpath
+.settings/
 
-# Arquivos de sistema
-*.class
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Mac / Linux / Windows arquivos temporários
 .DS_Store
+Thumbs.db
