@@ -1,4 +1,4 @@
-package POO;
+package java.POO;
 
 public class Caneta {
     private String modelo;
