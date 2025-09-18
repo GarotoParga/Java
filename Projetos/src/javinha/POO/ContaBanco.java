@@ -12,7 +12,7 @@ public class ContaBanco {
         this.setStatus(false);
     }
 
-    public void statusAtual(){
+    public void statusAtual() {
         System.out.println("Conta: " + this.getNumConta());
         System.out.println("Tipo: " + this.getTipo());
         System.out.println("Dono: " + this.getDono());
@@ -34,9 +34,9 @@ public class ContaBanco {
 
     public void fecharConta() {
         if (this.getSaldo() > 0) {
-            System.out.println("Conta não pode ser fechada. Ainda possui dinheiro.");
+            System.out.println("Conta não pode ser fechada. Ainda possui dinheiro na conta de " + this.getDono());
         } else if (this.getSaldo() < 0) {
-            System.out.println("Conta não pode ser fechada. Possui debido.");
+            System.out.println("Conta não pode ser fechada. Possui debido na conta de " + this.getDono());
         } else {
             this.setStatus(false);
             System.out.println("Conta fechada com sucesso.");
@@ -75,10 +75,10 @@ public class ContaBanco {
         if (this.isStatus()) {
             if (this.getSaldo() >= v) {
                 this.setSaldo(this.getSaldo() - v);
-            }else{
+            } else {
                 System.out.println("Saldo insuficiente.");
             }
-        }else{
+        } else {
             System.out.println("Impossível pagar. Conta fechada");
         }
     }
