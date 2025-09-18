@@ -1,4 +1,4 @@
-package java;
+package javinha;
 
 import java.util.Scanner;
 

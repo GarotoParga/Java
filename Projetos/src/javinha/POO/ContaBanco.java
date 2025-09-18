@@ -1,4 +1,4 @@
-package java.POO;
+package javinha.POO;
 
 public class ContaBanco {
     public int numConta;

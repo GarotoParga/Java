@@ -1,4 +1,4 @@
-package java.POO;
+package javinha.POO;
 
 public class Planeta {
     protected String nomePlaneta, corCeu;
