@@ -1,4 +1,4 @@
-package javinha;
+package JAVABASE;
 
 import java.util.Scanner;
 import java.util.ArrayList;

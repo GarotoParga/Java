@@ -1,4 +1,4 @@
-package javinha.POO;
+package POO;
 
 public class Caneta {
     private String modelo;

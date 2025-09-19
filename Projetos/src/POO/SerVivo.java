@@ -1,4 +1,4 @@
-package javinha.POO;
+package POO;
 
 public class SerVivo {
     String nome, especie, cor;

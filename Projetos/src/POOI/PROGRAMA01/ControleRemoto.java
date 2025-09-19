@@ -1,4 +1,4 @@
-package javinha.POO.POOI;
+package POOI.PROGRAMA01;
 
 public class ControleRemoto implements Controlador {
     private int volume;

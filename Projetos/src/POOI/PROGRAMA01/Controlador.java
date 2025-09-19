@@ -1,4 +1,4 @@
-package javinha.POO.POOI;
+package POOI.PROGRAMA01;
 
 public interface Controlador {
 
