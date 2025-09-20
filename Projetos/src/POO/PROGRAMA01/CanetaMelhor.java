@@ -1,4 +1,4 @@
-package POO;
+package POO.PROGRAMA01;
 
 public class CanetaMelhor {
     private String modelo, cor;

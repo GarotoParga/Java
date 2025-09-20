@@ -1,4 +1,4 @@
-package POO;
+package POO.PROGRAMA01;
 
 public class ContaBanco {
     public int numConta;

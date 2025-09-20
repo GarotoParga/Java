@@ -1,4 +1,4 @@
-package POO;
+package POO.PROGRAMA01;
 
 public class Planeta {
     protected String nomePlaneta, corCeu;

@@ -1,4 +1,4 @@
-package POO;
+package POO.PROGRAMA01;
 import java.text.DecimalFormat;
 
 public class ContaBancaria {

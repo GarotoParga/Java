@@ -8,6 +8,7 @@ public class Carro implements Veiculo {
     public Carro() {
         this.ligado = false;
         this.velocidade = 0;
+        this.setNitro(false);
     }
 
     private boolean isLigado() {
@@ -48,6 +49,7 @@ public class Carro implements Veiculo {
     public void desligar() {
         if (this.isLigado() && this.getVelocidade() == 0) {
             this.setLigado(false);
+            this.setNitro(false);
             System.out.println("Carro desligado com sucesso.");
         } else if (this.isLigado() && this.getVelocidade() > 0) {
             System.out.println("Seu carro ainda está em movimento. Pare ele primeiro.");
@@ -95,8 +97,8 @@ public class Carro implements Veiculo {
     }
 
     public void statusCarro() {
-        if (this.isLigado() && this.isNitro()) {
             System.out.println("-----STATUS-----");
+        if (this.isLigado() && this.isNitro()) {
             System.out.println("Carro ligado com Nitro ativado.");
         } else if (this.isLigado() && !this.isNitro()) {
             System.out.println("Carro ligado com Nitro desativado.");

@@ -1,4 +1,4 @@
-package POO;
+package POO.PROGRAMA01;
 
 public class Cafe {
     int quantidade;
