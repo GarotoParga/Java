@@ -2,10 +2,15 @@ package POOI.PROGRAMA01;
 
 public class Main {
     public static void main(String[] args) {
-        ControleRemoto cont = new ControleRemoto();
-        cont.ligar();
-        cont.abrirMenu();
-        cont.fecharMenu();
-        cont.play();
+        ControleRemoto controle = new ControleRemoto();
+
+        controle.ligar();
+
+        for (int i = 0; i < 100; i+= 10 ){
+            controle.menosVolume();
+        }
+
+        controle.abrirMenu();
+
     }
 }
