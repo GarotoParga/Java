@@ -1,4 +1,4 @@
-package POOI.PROGRAMA02;
+package POO.PROGRAMA06;
 
 public class Carro implements Veiculo {
     private boolean ligado;

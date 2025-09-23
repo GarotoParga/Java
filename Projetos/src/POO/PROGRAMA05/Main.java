@@ -1,4 +1,4 @@
-package POOI.PROGRAMA01;
+package POO.PROGRAMA05;
 
 public class Main {
     public static void main(String[] args) {
