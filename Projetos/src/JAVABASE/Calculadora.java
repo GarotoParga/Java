@@ -30,6 +30,8 @@ public class Calculadora {
         } else {
             System.out.println("Sistema finalizado.");
         }
+
+        scan.close();
     }
 
     public static int somar(int a, int b) {
