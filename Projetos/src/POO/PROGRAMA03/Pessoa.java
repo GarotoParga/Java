@@ -16,7 +16,6 @@ public class Pessoa {
         calcularImc();
     }
 
-
     private String getNome() {
         return nome;
     }

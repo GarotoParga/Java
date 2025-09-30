@@ -4,7 +4,6 @@ import java.util.Random;
 
 public class Luta {
     private Lutador desafiante, desafiado;
-    private int rounds;
     private boolean aprovada;
 
 
