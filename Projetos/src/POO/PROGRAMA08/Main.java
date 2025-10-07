@@ -11,7 +11,7 @@ public class Main {
         Livro manga = new Livro("Chapeuzinho vermelho", "Carlinhos do porco", leitores[1]);
 
         manga.abrir();
-        manga.folhear(99);
+        manga.folhear(99); // Número escolhido para página atual
         manga.detalhes();
     }
 }

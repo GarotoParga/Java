@@ -1,22 +1,17 @@
-package POO.PROGRAMA08;
+package POO.PROGRAMA09;
 
 public class Pessoa {
     private String nome;
     private int idade;
     private String sexo;
 
-    // CONSTRUCT
-    public Pessoa(String nome, int idade, String sexo) {
-        this.setNome(nome);
-        this.setIdade(idade);
-        this.setSexo(sexo);
+    public void toString(String nome, int idade, String sexo) {
+        System.out.println("Nome: " + nome + ". Idade: "+  idade + ". Sexo: " + sexo);
     }
-
 
     public void fazerAniversario(){
         this.setIdade(idade ++);
     }
-
 
     public String getNome() {
         return nome;
