@@ -1,7 +1,5 @@
 package POO.PROGRAMA08;
 
-import java.util.Random;
-
 public class Livro implements Publicacao {
     private String titulo;
     private String autor;
