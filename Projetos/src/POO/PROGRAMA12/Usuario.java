@@ -33,7 +33,7 @@ public class Usuario extends Pessoa {
 
     public void AssistirVideo(Video video) {
         if (login) {
-            System.out.println("Assistindo... " + video.getTitulo());
+            System.out.println("O usuário " + this.getNome() + " está Assistindo... "  + video.getTitulo());
             video.adiconarEspectador(this);
             this.videos.add(video);
             this.setTotalAssistido(this.getVideos().size());
@@ -44,6 +44,7 @@ public class Usuario extends Pessoa {
     }
 
     public void like(Video video) {
+        System.out.println(this.getNome() + " curtiu o vídeo: " + video.getTitulo());
         video.like();
         this.setVideosCurtidos(video);
         video.espectadores.add(this);
@@ -51,6 +52,7 @@ public class Usuario extends Pessoa {
 
     public void comentar(Video video, String comentario) {
         if (login) {
+            System.out.println(this.getNome() + " comentou no vídeo: " + video.getTitulo());
             this.meusComentarios.add(comentario + " no vídeo: " + video.getTitulo());
             String comentarios = (this.getNome() + ": " + comentario);
             video.setAvaliacao(comentarios);
@@ -64,7 +66,7 @@ public class Usuario extends Pessoa {
         System.out.println("Nome: " + this.getNome());
         System.out.println("Idade : " + this.getIdade());
         System.out.println("Sexo : " + this.getSexo());
-        if (this.videosCurtidos.size() > 0) {
+        if (!this.videosCurtidos.isEmpty()) {
             System.out.println("---------- Vídeos Curtidos ----------");
             int i = 1;
             for (Video video : videosCurtidos) {
@@ -76,7 +78,7 @@ public class Usuario extends Pessoa {
 
     @Override
     public void ganharExperiencia() {
-        if (!login || videos.size() < 1) {
+        if (!login || videos.isEmpty()) {
             System.out.println("Precisa assistir um vídeo para ganhar experiência.");
         } else {
             this.setExperiencia(experiencia + 10);

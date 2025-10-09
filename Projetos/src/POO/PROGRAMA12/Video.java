@@ -18,10 +18,12 @@ public class Video implements AcoesVideo {
     }
 
     public void detalhes() { // Imprimir detalhes do vídeo
+        System.out.println("---------- Detalhes Do Vídeo ----------");
         System.out.println("Title: " + this.getTitulo());
         System.out.println("Views: " + this.getViews());
         System.out.println("Likes: " + this.getCurtidas());
         if (!this.getAvaliacao().isEmpty()) {
+            System.out.println("Comentários: " + avaliacao.size());
             System.out.println("---------- Comentários ----------");
             for (String comentario : avaliacao) {
                 System.out.println(comentario);

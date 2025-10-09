@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         // Videos 
         Video canalDeClash = new Video("Como dar três corôas no Clash Royale!"); 
-        Video receitasCaseiras = new Video("Como fazer suco de banana sem banana!"); 
+        // Video receitasCaseiras = new Video("Como fazer suco de banana sem banana!");
         
         // Usuarios
         Usuario user01 = new Usuario("Davi", 11, "Masculino");
